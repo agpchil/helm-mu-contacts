@@ -1,0 +1,20 @@
+#+TITLE:    HELM MU CONTACTS
+#+DATE:     2013-05-08
+#+LANGUAGE: en
+#+OPTIONS:  num:nil
+#+STARTUP:  hidestars indent content showall
+
+* Helm mu contacts
+
+  Mu contacts source for `helm`.
+
+** Usage
+
+   Put this file on your Emacs-Lisp load path, add following into your ~/.emacs startup file:
+
+   #+BEGIN_SRC emacs-lisp
+    (require 'helm-mu-contacts)
+    (define-key message-mode-map (kbd "C-c C-f c") 'helm-mu-contacts)
+   #+END_SRC
+
+   When composing a message you can type =C-c C-f c= and select the contact using helm.
