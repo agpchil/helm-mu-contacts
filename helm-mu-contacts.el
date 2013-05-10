@@ -41,7 +41,6 @@
              (split-string (shell-command-to-string helm-mu-contacts-cmd)
                            "\n")))
 
-
 (defun helm-mu-contacts-list ()
   "Return a list of mu contacts in a readable format."
   (mapcar
@@ -58,7 +57,6 @@
 (defun helm-mu-contacts-init ()
   "Initialize buffer with all contacts of mu."
   (helm-init-candidates-in-buffer 'global (helm-mu-contacts-list)))
-
 
 (defun helm-mu-contacts-insert-action (candidate)
   "Insert CANDIDATE in current buffer."
